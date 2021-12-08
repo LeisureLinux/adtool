@@ -688,7 +688,7 @@ int main(int argc, char **argv) {
   if (print_version) {
     printf("adtool version %s\n"
            "http://gp2x.org/adtool/\n"
-           "by Mike Dawson <mike@gp2x.org>\n",
+           "by Mike Dawson <mike@gp2x.org>\n"
            "Last Modified By: Albert Xu <albertxu@freelamp.com>\n",
            ADTOOL_VERSION);
     exit(0);
