@@ -35,3 +35,11 @@ See the adtool man page
 
 1. Add aarch64 support
 2. Add static compiling(muslib) support
+
+#### FAQ:
+
+1. I encounter "am\_\_api_version" hard coded in aclocal.m4, error: "can't find aclocal-1.7"
+   Fix:
+   ```
+   autoreconf --force --install
+   ```
