@@ -1,8 +1,6 @@
 #### Description:
 
-```
-adtool is a unix command line utility for Active Directory administration.  Features include user and group creation, deletion, modification, password setting and directory query and search capabilities.
-```
+adtool is a unix command line utility for Active Directory administration. Features include user and group creation, deletion, modification, password setting and directory query and search capabilities. Not fully tested yet so far.
 
 #### System requirements:
 
@@ -32,3 +30,8 @@ An example configuration file is installed to {prefix}/etc/adtool.cfg.dist. Rena
 #### Usage:
 
 See the adtool man page
+
+#### Todo:
+
+1. Add aarch64 support
+2. Add static compiling(muslib) support
