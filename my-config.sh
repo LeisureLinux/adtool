@@ -24,6 +24,7 @@ build_openldap() {
 		make depend &&
 		make
 	popd
+	# No need to do make install
 }
 
 make distclean ||
@@ -37,9 +38,5 @@ make distclean ||
 		CC="${MYCC}" CXX="${MYCXX}" \
 		ac_cv_func_malloc_0_nonnull=yes \
 		ac_cv_func_realloc_0_nonnull=yes
-
-# LIBS=
-# CC="${MYCC} -arch i386 -arch x86_64 -arch aarch64" \
-# CXX="${MYCXX} -arch i386 -arch x86_64 -arch aarch64"
-# CPP="gcc -E" CXXCPP="g++ -E"
-# ./configure --prefix=/opt/adtool-aarch64 --host=x86_64 --build=aarch64 --target=aarch64
+# Above two ac lines to fix: "Undefined reference to rpl_malloc"
+# After build openldap, copy the library libldap to libldap_r and change the filenames begin with ldap and libldap, with ldap_r and libldap_r, need to change the files in .lib as well
