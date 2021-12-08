@@ -28,11 +28,11 @@ searchbase ou=users,dc=example,dc=com
 | if there is a problem reading the config file, or
 |	AD_SERVER_CONNECT_FAILURE if a connection can't be made.
 */
-char *system_config_file;
-char *uri;
-char *binddn;
-char *bindpw;
-char *search_base;
+static char *system_config_file;
+static char *uri;
+static char *binddn;
+static char *bindpw;
+static char *search_base;
 
 /* ad_get_error() returns a pointer to a string containing an
 | explanation of the last error that occured.
