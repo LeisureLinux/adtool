@@ -35,6 +35,7 @@ See the adtool man page
 
 1. Add aarch64 support
 2. Add static compiling(muslib) support
+3. See the TODO file
 
 #### FAQ:
 
