@@ -12128,6 +12128,7 @@ _ACEOF
 fi
 done
 
+# For Cross Compile for ARM comment out AC_FUNC_MALLOC and AC_FUNC_REALLOC if present.
 
 ac_config_files="$ac_config_files config.h"
 

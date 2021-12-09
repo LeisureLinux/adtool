@@ -290,7 +290,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 INCLUDES = -I@top_srcdir@/src/lib
 AM_CFLAGS = @CFLAGS@
-adtool_LDADD = @top_srcdir@/src/lib/libactive_directory.a -lldap -llber -lldap_r -lpthread -lresolv 
+adtool_LDADD = @top_srcdir@/src/lib/libactive_directory.a -lldap -llber -lpthread -lresolv 
 all: all-am
 
 .SUFFIXES:

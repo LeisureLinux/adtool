@@ -29,6 +29,7 @@ AC_CHECK_HEADERS([fcntl.h stdlib.h string.h])
 # AC_FUNC_MALLOC
 AC_CHECK_DECL([_AIX61], [], [AC_FUNC_MALLOC])
 AC_CHECK_FUNCS([memset strdup])
+# For Cross Compile for ARM comment out AC_FUNC_MALLOC and AC_FUNC_REALLOC if present.
 
 AC_CONFIG_FILES([config.h])
 
